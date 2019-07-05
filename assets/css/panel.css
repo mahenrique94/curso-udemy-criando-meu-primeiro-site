@@ -1,0 +1,90 @@
+.panel {
+    display: grid;
+    grid-template-rows: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.panel__info {
+    background: #2c3051;
+    grid-area: info;
+}
+
+.panel__picture {
+    grid-area: picture;
+    height: 100%;
+    object-fit: cover;
+    object-position: 35%;
+    width: 100%;
+}
+
+.panel__bar {
+    padding: 1.5rem 1.25rem;
+}
+
+.panel__bar___icon {
+    color: #ffbf8d;
+    font-size: 2.5rem;
+}
+
+.panel__welcome {
+    background: #363b5f;
+    height: calc(100% - 88px);
+    float: left;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    width: 75px;
+}
+
+.panel__welcome___text {
+    color: #fdfdfd;
+    font-size: 1.5rem;
+    left: 50%;
+    letter-spacing: 7px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    white-space: nowrap;
+}
+
+.panel__welcome___text-alt {
+    color: #ffbf8d;
+}
+
+.panel__header {
+    float: left;
+    text-align: center;
+    width: calc(100% - 75px);
+}
+
+.panel__title {
+    color: #fdfdfd;
+    line-height: 1.75;
+    text-transform: uppercase;
+}
+
+.panel__title-alt {
+    color: #07fff7;
+}
+
+.panel__subtitle {
+    color: #07fff7;
+    font-weight: 100;
+}
+
+.panel__subtitle::before {
+    content: 'trabalho como';
+    color: #fdfdfd;
+    font-size: 1rem;
+    font-weight: 100;
+    margin-right: .5rem;
+    vertical-align: middle;
+}
+
+.panel__body {
+    float: left;
+    height: calc(100% - 97px - 88px);
+    width: calc(100% - 75px);
+}

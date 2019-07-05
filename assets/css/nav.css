@@ -1,0 +1,61 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav__item {
+    align-items: center;
+    background: #363b5f;
+    border-radius: 10px;
+    box-shadow: 15px 20px 10px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    padding: 2rem;
+    transition: all .2s ease-in;
+}
+
+.nav__item:last-child {
+    margin-bottom: 0;
+}
+
+.nav__item:hover {
+    background: #474f7d;
+    cursor: pointer;
+}
+
+.nav__item.about-me .nav__icon,
+.nav__item.about-me .nav__label-alt {
+    color: #fa709a;
+}
+
+.nav__item.my-resume .nav__icon,
+.nav__item.my-resume .nav__label-alt {
+    color: #f6d365;
+}
+
+.nav__item.my-portfolio .nav__icon,
+.nav__item.my-portfolio .nav__label-alt {
+    color: #43e97B;
+}
+
+.nav__item.contact-me .nav__icon,
+.nav__item.contact-me .nav__label-alt {
+    color: #6991c7;
+}
+
+.nav__icon {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.nav__label {
+    color: #fdfdfd;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
