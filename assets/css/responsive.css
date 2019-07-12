@@ -32,6 +32,14 @@
     .nav__icon  {
         display: none;
     }
+
+    .card__item {
+        width: 100%;
+    }
+
+    .projects__project {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -54,6 +62,10 @@
     .nav__icon  {
         display: block;
     }
+
+    .card__item {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -68,6 +80,10 @@
     .nav__item {
         margin-bottom: 2rem;
         width: calc(50% -  1rem);
+    }
+
+    .projects__project {
+        width: calc(50% - 1rem);
     }
 }
 

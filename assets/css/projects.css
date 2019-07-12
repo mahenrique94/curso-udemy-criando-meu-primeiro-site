@@ -1,0 +1,103 @@
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects__project {
+    border: 1px solid transparent;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+..projects__project:last-child {
+    margin-bottom: 0;
+}
+
+.projects__project:hover {
+    border-color: #fdfdfd;
+}
+
+.projects__project:hover > .projects__background {
+    filter: brightness(.75);
+    transform: scale(1.2);
+}
+
+.projects__project:hover > .projects__project___view,
+.projects__project:hover > .projects__project___title,
+.projects__project:hover > .projects__project___tag {
+    display: block;
+}
+
+.projects__background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    transition: all .2s linear;
+    width: 100%;
+}
+
+.projects__background--first {
+    background-image: url('../img/projects/1.jpg');
+}
+
+.projects__background--second {
+    background-image: url('../img/projects/2.jpg');
+}
+
+.projects__background--third {
+    background-image: url('../img/projects/3.jpg');
+}
+
+.projects__background--fourth {
+    background-image: url('../img/projects/4.jpg');
+}
+
+.projects__project___view {
+    background: #363b5f;
+    border: 1px solid #fdfdfd;
+    border-radius: 5px;
+    color: #fdfdfd;
+    display: none;
+    padding: .5rem 1rem;
+    position: absolute;
+    text-decoration: none;
+    top: 15px;
+    transition: all .2s linear;
+    right: 15px;
+}
+
+.projects__project___view:hover {
+    background: #2c3051;
+}
+
+.projects__project___title {
+    bottom: 50px;
+    color: #00f7ef;
+    display: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    left: 15px;
+    text-transform: uppercase;
+}
+
+.projects__project___tag {
+    bottom: 15px;
+    color: #fdfdfd;
+    display: none;
+    left: 15px;
+    line-height: 2;
+    position: absolute;
+}
+
+.projects__project___icon {
+    margin-right: .25rem;
+}

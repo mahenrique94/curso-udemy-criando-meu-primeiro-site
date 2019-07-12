@@ -42,11 +42,6 @@
     color: #43e97B;
 }
 
-.nav__item.contact-me .nav__icon,
-.nav__item.contact-me .nav__label-alt {
-    color: #6991c7;
-}
-
 .nav__icon {
     font-size: 3rem;
     line-height: 1.5;

@@ -1,0 +1,46 @@
+.card {
+    background: #363b5f;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.card__content {
+    color: #a8a8a8;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.card__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.card__item {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.card__item___icon {
+    color: #07fff7;
+    margin-right: .25rem;
+}
+
+.card__item___label {
+    color: #fdfdfd;
+    font-weight: bold;
+    margin-right: .25rem;
+}
+
+.card__item___value {
+    color: #a8a8a8;
+    font-weight: 100;
+}
